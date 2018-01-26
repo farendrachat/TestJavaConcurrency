@@ -4,6 +4,7 @@ public class DeadLockCondition {
 	public static Object lock1 = new Object();
 	public static Object lock2 = new Object();
 
+	// this is the main method
 	public static void main(String args[]) {
 		ExecutorService threadPool = Executors.newFixedThreadPool(2);
 		threadPool.execute(new ThreadDemo1());
